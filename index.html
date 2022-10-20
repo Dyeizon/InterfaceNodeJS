@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banca de Dados</title>
+</head>
+<body>
+    <script>
+        var form = document.getElementById("formulario");
+        function handleForm(event) { event.preventDefault(); } 
+        form.addEventListener('submit', handleForm);
+    </script>
+
+    <form name="formulario" id="formulario" onsubmit="return false" method="post">
+        
+        <p>ID</p> 
+        <input type="text" name="id">
+
+        <p>Nome</p> 
+        <input type="text" name="nome">
+
+        <p>Idade</p> 
+        <input type="text" name="idade">
+        
+        <input type="button" onclick="return lerFormulario()" value="Registrar Cliente">
+    </form>
+    
+    <script type="module" src="lerFormulario.js"></script>
+    
+</body>
+</html>
